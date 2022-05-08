@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tapestry', cursive;
 }
 
 body {
@@ -21,6 +22,8 @@ header {
     padding: 10px 20px;
     background-color: var(--secondary-color);
     display: flex;
+    position: sticky;
+    top: 0;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -35,10 +38,34 @@ header nav {
     align-items: center;
 }
 
-header nav a {
+header nav div {
+    height: 50px;
+    width: 170px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav div:hover {
+    height: 50px;
+    width: 170px;
+    border-radius: 15px;
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div a {
     font-size: 24px;
     text-decoration: none;
     color: var(--quaternary-color);
+}
+header nav div:hover a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 /* Hero/About Me Section styling */
@@ -81,13 +108,13 @@ header nav a {
 
 .projects {
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--quinary-color);
+    color: var(--quaternary-color);
 }
 
 .projects h2 {
@@ -97,7 +124,7 @@ header nav a {
 
 #applications {
     width: 90%;
-    height: 950px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +152,101 @@ header nav a {
 
 #more-apps {
     width: 69%;
+    height: 900px;
     display: flex;
     background-color: rgb(255, 255, 255, 0.5);
+    border: 3px solid var(--quinary-color);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#column-1, #column-2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.application {
+    width: 400px;
+    height: 225px;
+    border: 4px solid var(--senairy-color);
+    border-radius: 10px;
+    background-image: url("https://unsplash.it/600/400");
+    background-size: cover;
+}
+
+.app-name {
+    width: 133px;
+    height: 75px;
+    border: 4px solid var(--senairy-color);
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+#column-1 a {
+    text-decoration: none;
+}
+#column-2 a {
+    text-decoration: none;
+}
+
+#column-1 .application {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#column-2 .application {
+    display: flex;
+    align-items: flex-end;
+}
+
+#run-buddy {
+    background-image: url("../imgs/run-buddy.JPG");
+    background-size: cover;
+}
+
+/* Footer Style */
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+}
+
+footer div {
+    height: 50px;
+    width: 220px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div:hover {
+    height: 50px;
+    width: 220px;
+    border-radius: 15px;
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+}
+
+footer div:hover a {
+    color: var(--secondary-color);
 }

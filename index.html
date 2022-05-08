@@ -4,20 +4,29 @@
 		<meta charset="UTF-8"/>
 		<title>Sarah's Portfolio</title>
 		<link rel="stylesheet" href="./assets/css/style.css"/>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header>
 			<h1>Sarah's Portfolio</h1>
 			<nav>
-				<a href="#about-me">
-					About Me
-				</a>
-				<a href= "#projects">
-					Projects
-				</a>
-				<a href= "#contact">
-					Contact
-				</a>
+				<div>
+					<a href="#about-me">
+						About Me
+					</a>
+				</div>
+				<div>
+					<a href= "#projects">
+						Projects
+					</a>
+				</div>
+				<div>
+					<a href= "#contact">
+						Contact
+					</a>
+				</div>
 			</nav>
 		</header>
 		<section id="about-me" class="about">
@@ -45,7 +54,7 @@
 				</p>
 			</div>
 		</section>
-		<section id="#projects" class="projects">
+		<section id="projects" class="projects">
 			<h2>
 				My Projects
 			</h2>
@@ -59,7 +68,7 @@
 				<div id="more-apps">
 					<div id="column-1">
 						<a href="https://sarahstelljes.github.io/run-buddy/">
-							<article class="application">
+							<article id="run-buddy" class="application">
 								<div class="app-name">
 									<h3>Run Buddy</h3>
 								</div>
@@ -106,14 +115,16 @@
 				</div>
 			</div>
 		</section>
-		<footer>
+		<footer id="contact">
 			<h2 class="border-right">Contact Me</h2>
 			<h3 id="number">336-210-1845</h3>
-			<h3 id="element">
-				<a href="mailto:sarah.stelljes@gmail.com">
-					sarah.stelljes@gmail.com
-				</a>
-			</h3>
+			<div>
+				<h3 id="element">
+					<a href="mailto:sarah.stelljes@gmail.com">
+						sarah.stelljes@gmail.com
+					</a>
+				</h3>
+			</div>
 		</footer>
 	</body>
 </html>
