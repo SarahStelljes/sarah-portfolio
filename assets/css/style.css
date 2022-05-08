@@ -4,6 +4,7 @@
     --tertiary-color: rgb(72, 72, 72);
     --quaternary-color: rgb(253, 247, 206);
     --quinary-color: white;
+    --senairy-color: rgb(255, 245, 179);
 }
 * {
     margin: 0;
@@ -63,9 +64,67 @@ header nav a {
 
 #about-me-info {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#about-me-info h3 {
+#about-me-info .border-bottom {
+    width: 10%;
     border-bottom: 1px solid var(--quaternary-color);
     margin-bottom: 5px;
+}
+#about-me-info p {
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+}
+
+.projects {
+    width: 100%;
+    height: 1000px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--quinary-color);
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#applications {
+    width: 90%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#first-app {
+    width: 630px;
+    height: 301px;
+    border: 4px solid var(--senairy-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#direwolfconnect-div {
+    width: 70%;
+    border-bottom: 3px solid var(--senairy-color);
+    margin-bottom: 10px;
+}
+
+#direwolfconnect {
+    font-size: 28px;
+    color: var(--quaternary-color);
+}
+
+#more-apps {
+    width: 69%;
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.5);
 }
