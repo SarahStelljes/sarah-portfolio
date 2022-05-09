@@ -12,3 +12,6 @@ A portfolio of Sarah S.' work.
 
 ## Live Link
 https://sarahstelljes.github.io/sarah-portfolio/
+
+## Contribution
+Made by Sarah E. Stelljes

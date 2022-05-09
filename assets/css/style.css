@@ -14,14 +14,15 @@
 }
 
 body {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
 }
 /* Header Style */
 header {
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: var(--secondary-color);
     display: flex;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     flex-wrap: wrap;
@@ -29,63 +30,54 @@ header {
     justify-content: space-between;
     color: var(--quaternary-color);
 }
+header h1 {
+    font-size: 1.8vw;
+    font-weight: lighter;
+}
+header a {
+    text-decoration: none;
+    color: var(--quaternary-color);
+}
 
-header nav {
+#header-nav {
     width: 40%;
+}
+
+#header-nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
 }
 
-header nav div {
-    height: 50px;
-    width: 170px;
-    border-radius: 15px;
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#header-nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.5vw;
 }
-header nav div:hover {
-    height: 50px;
-    width: 170px;
-    border-radius: 15px;
+#header-nav ul li a:hover {
     background-color: var(--quaternary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header nav div a {
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--quaternary-color);
-}
-header nav div:hover a {
-    font-size: 24px;
-    text-decoration: none;
     color: var(--secondary-color);
+    border-radius: 10px;
 }
 
 /* Hero/About Me Section styling */
 .about {
     padding: 40px 0 100px 0;
-    background-image: linear-gradient(var(--primary-color) 80%, rgba(0, 0, 0, 0));
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--quinary-color);
+    color: var(--quaternary-color);
 }
 
 #my-photo {
     width: 300px;
     height: 400px;
-    border-radius: 15px;
-    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    border: 3px solid var(--quaternary-color);
     margin-bottom: 10px;
 }
 
@@ -97,18 +89,20 @@ header nav div:hover a {
 }
 
 #about-me-info .border-bottom {
-    width: 10%;
-    border-bottom: 1px solid var(--quaternary-color);
+    width: 150px;
+    border-bottom: 2px solid var(--quaternary-color);
     margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
 }
 #about-me-info p {
     margin-bottom: 5px;
     line-height: 1.5rem;
 }
 
+/* Projects Section */
 .projects {
     width: 100%;
-    height: 1300px;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
@@ -123,7 +117,7 @@ header nav div:hover a {
 }
 
 #applications {
-    width: 90%;
+    width: 94.5%;
     height: 1200px;
     display: flex;
     flex-direction: column;
@@ -151,7 +145,6 @@ header nav div:hover a {
 }
 
 #more-apps {
-    width: 69%;
     height: 900px;
     display: flex;
     background-color: rgb(255, 255, 255, 0.5);
@@ -162,6 +155,7 @@ header nav div:hover a {
 }
 
 #column-1, #column-2 {
+    padding: 30px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -226,7 +220,7 @@ footer {
 footer div {
     height: 50px;
     width: 220px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -235,7 +229,7 @@ footer div {
 footer div:hover {
     height: 50px;
     width: 220px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: var(--quaternary-color);
     display: flex;
     justify-content: center;
@@ -249,4 +243,74 @@ footer div a {
 
 footer div:hover a {
     color: var(--secondary-color);
+}
+/* End Main CSS */
+
+/* Media Queries Start */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 15px;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        text-align: center;
+        width: 100%;
+    }
+    #header-nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    #header-nav ul li a {
+        font-size: 20px;
+    }
+
+    /* About Style */
+    .about {
+        padding: 20px 0 50px 0;
+    }
+
+    /* Projects Style */
+    .projects {
+        padding: 20px 0;
+    }
+    .projects h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    #applications {
+        height: 925px;
+    }
+    #first-app {
+        width: 400px;
+        height: 201px;
+        border: 3px solid var(--senairy-color);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    #direwolfconnect-div {
+        width: 92%;
+    }
+    #more-apps {
+        width: 90%;
+        height: 700px
+    }
+    .application {
+        width: 300px;
+        height: 175px;
+    }
+    .app-name {
+        width: 100px;
+        height: 63px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    #header-nav ul li a {
+        font-size: 26px;
+    }
 }
