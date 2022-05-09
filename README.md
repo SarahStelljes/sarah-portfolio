@@ -9,7 +9,7 @@ A portfolio of Sarah S.' work.
 * CSS
 
 ## Image
-
+![image](./assets/imgs/portfolio-img.JPG)
 ## Live Link
 https://sarahstelljes.github.io/sarah-portfolio/
 
