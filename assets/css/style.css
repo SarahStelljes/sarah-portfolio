@@ -183,7 +183,9 @@ header a {
     text-align: center;
     color: var(--secondary-color);
 }
-
+.hidden-text {
+    display: none;
+}
 #column-1 a {
     text-decoration: none;
 }
@@ -203,6 +205,10 @@ header a {
 
 #run-buddy {
     background-image: url("../imgs/run-buddy.JPG");
+    background-size: cover;
+}
+#horiseon {
+    background-image: url("../imgs/Horiseon.JPG");
     background-size: cover;
 }
 
@@ -296,7 +302,7 @@ footer div:hover a {
     }
     #more-apps {
         width: 90%;
-        height: 700px
+        height: 700px;
     }
     .application {
         width: 300px;
@@ -310,7 +316,77 @@ footer div:hover a {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 22px;
+    }
+    #header-nav {
+        width: 100%;
+    }
     #header-nav ul li a {
-        font-size: 26px;
+        font-size: 23px;
+    }
+    
+    /* about me section */
+    #my-photo {
+        width: 200px;
+        height: 267px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    #about-me-info {
+        width: 85%;
+    }
+
+    #applications {
+        height: 1100px;
+    }
+    #first-app {
+        width: 267px;
+        height: 129.7px;
+    }
+    #more-apps {
+        height: 900px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #column-1, #column-2 {
+        padding: 0;
+    }
+    .application {
+        width: 200px;
+        height: 117px;
+    }
+    .app-name {
+        display: none;
+    }
+    .hidden-text {
+        display: flex;
+        text-align: center;
+        color: var(--quaternary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #column-1 a, #column-2 a {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+    #column-1 a h3, #column-2 a h3 {
+        font-weight: lighter;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer h2 {
+        border-bottom: 2px solid var(--quaternary-color);
+    }
+    footer h2, footer h3, #element {
+        font-size: 23px;
+        font-weight: lighter;
     }
 }
