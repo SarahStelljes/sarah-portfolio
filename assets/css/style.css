@@ -211,6 +211,10 @@ header a {
     background-image: url("../imgs/Horiseon.JPG");
     background-size: cover;
 }
+#trov {
+    background-image: url("../imgs/trov.JPG");
+    background-size: cover;
+}
 
 /* Footer Style */
 footer {
